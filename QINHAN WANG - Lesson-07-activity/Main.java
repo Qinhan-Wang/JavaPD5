@@ -58,7 +58,6 @@ class Main {
     Create the variables, ask the user for the variable values, write the equation in file EQ4-act6 and display the equation value..
     
 */
-    
     System.out.println("Please enter your x1 value:");
     double x1 = Input.readDouble();
     System.out.println("Please enter your x2 value:");
@@ -108,10 +107,11 @@ class Main {
     System.out.println("Please enter your c value:");
     double c = Input.readDouble();
 
-    double X1 = (-b + Math.sqrt(b * b - 4*a*c)) / 2*a;
-    double X2 = (-b - Math.sqrt(b * b - 4*a*c)) / 2*a;
+    double X1 = (-b + Math.sqrt(b * b - 4*a*c)) / (2*a);
+    double X2 = (-b - Math.sqrt(b * b - 4*a*c)) / (2*a);
     System.out.println("The result is:" + X1);
     System.out.println("The result is:" + X2);
+    
 
     // **************************************************
     // **** Don't write any code below here.  ***********
