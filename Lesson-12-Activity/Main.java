@@ -7,8 +7,43 @@ class Main {
   void printt(Object o){ System.out.print(o);}
 
   void init(){
+
+    //Challenge 1//
+    System.out.println("Please enter your credit card number:");
+    String card = Input.readString();
+    String result1 = creditCardType(card);
+    System.out.println("Your credit card type is: " + result1);
+
+
+    //Challenge 2//
+    System.out.println("Please enter a word:");
+    String word = Input.readString();
+    String result2 = pigLatin(word);
+    System.out.println("Your Pig Latin word is: " + result2);
+
+
+    //Challenge 3//
+    System.out.println("Please enter your zip code:");
+    String zip = Input.readString();
+    String result3 = nycLocate(zip);
+    System.out.println("Your NYC location is: " + result3);
+
+
+    //Challenge 4//
+    System.out.println("Please enter a date in MM/DD/YYYY:");
+    String date = Input.readString();
+    String result4 = getMonth(date);
+    System.out.println("The month is: " + result4);
+
+
+    //Challenge 5//
+    System.out.println("Please enter a password:");
+    String password = Input.readString();
+    boolean result5 = validatePswd(password);
+    System.out.println("Your password is valid: " + result5);
    
   }
+  
   //Challenge 1//
    String creditCardType(String card){
    
