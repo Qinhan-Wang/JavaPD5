@@ -27,8 +27,8 @@ int allowance(){
   //challenge2//
    void addTwoNumbers(){
 
-    int num1 = randInt(1,10);
-    int num2 = randInt(1,10);
+    int num1 = randInt(0,99);
+    int num2 = randInt(0,99);
     int sum = num1 + num2;
 
     print("please enter your guess number:");
@@ -38,6 +38,8 @@ int allowance(){
       system.out.println("please try again!");
       guess = Input.readInt();
     }
+
+    print("Right!");
 
   }
   
